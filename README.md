@@ -10,11 +10,23 @@ Build and demo code examples.
 
 ## Basic Usage
 
+```html
+<!-- examples.html -->
+<div id="examplr"></div>
+<script src="example-bundle.js"></script>
+```
+
 ```js
+// examples.js
 import examplr from 'examplr';
 const example = examplr();
 
 example('My Cool Example', el => {
   el.textContent = 'Hello World!';
 });
+```
+
+```shell
+$ browserify examples.js -o example-bundle.js --debug
+$ open examples.html
 ```
