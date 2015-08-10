@@ -18,10 +18,9 @@ Build and demo code examples.
 
 ```js
 // examples.js
-import examplr from 'examplr';
-const example = examplr();
+var example = require('examplr')();
 
-example('My Cool Example', el => {
+example('My Cool Example', function(el) {
   el.textContent = 'Hello World!';
 });
 ```
